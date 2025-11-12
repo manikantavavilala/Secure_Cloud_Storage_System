@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 Feb, 2024 7:14:01 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.FileRequest" table="FILEREQUEST">
+        <id name="requestid" type="int">
+            <column name="REQUESTID" />
+            <generator class="increment" />
+        </id>
+        <property name="fileid" type="int">
+            <column name="FILEID" />
+        </property>
+        <property name="userid" type="java.lang.String">
+            <column name="USERID" />
+        </property>
+        <property name="requestedon" type="java.lang.String">
+            <column name="REQUESTEDON" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>

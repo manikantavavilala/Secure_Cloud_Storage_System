@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 Feb, 2024 7:14:01 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.CloudFile" table="CLOUDFILE">
+        <id name="fileid" type="int">
+            <column name="FILEID" />
+            <generator class="increment" />
+        </id>
+        <property name="filename" type="java.lang.String">
+            <column name="FILENAME" />
+        </property>
+        <property name="filedescription" type="java.lang.String">
+            <column name="FILEDESCRIPTION" />
+        </property>
+        <property name="uploadedon" type="java.lang.String">
+            <column name="UPLOADEDON" />
+        </property>
+        <property name="ownerid" type="java.lang.String">
+            <column name="OWNERID" />
+        </property>
+        <property name="filekey" type="java.lang.String">
+            <column name="FILEKEY" />
+        </property>
+        <property name="uploadstatus" type="java.lang.String">
+            <column name="UPLOADSTATUS" />
+        </property>
+    </class>
+</hibernate-mapping>
